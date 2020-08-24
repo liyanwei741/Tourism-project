@@ -5,31 +5,36 @@ import Profile from '../components/profile'
 import Hotel from '../components/hotel'
 import Issued from '../components/issued'
 import Discover  from '../components/discover'
+import Tabbar from '../components/tabbar'
 
-
-
-export class indexRouter extends Component {
+class indexRouter extends Component {
     render() {
         return (
-            <Router>
-                <Route exact path="/home" 
-                render={ () =><Home></Home>}></Route>
+            
+            <Router >
                 
-                <Route exact path="/discover" 
-                render={ () =><Discover></Discover>}></Route>
+                    <Route exact path="/home" 
+                    component={Home}></Route>
+                    
+                    <Route exact path="/discover" 
+                    render={ () =><Discover></Discover>}></Route>
 
-                <Route exact path="/issued" 
-                render={ () =><Issued></Issued>}></Route>
+                    <Route exact path="/issued" 
+                    render={ () =><Issued></Issued>}></Route>
 
-                <Route exact path="/hotel" 
-                render={ () =><Hotel></Hotel>}></Route>
+                    <Route exact path="/hotel" 
+                    render={ () =><Hotel></Hotel>}></Route>
 
 
-                <Route exact path="/profile" 
-                render={ () =><Profile></Profile>}></Route>
-                
-                <Redirect from='/*' to='/home'></Redirect>
+                    <Route exact path="/profile" 
+                    render={ () =><Profile></Profile>}></Route>
+                    
+                    <Route path="/" component={Tabbar}>
+                </Route>
+
+                    <Redirect from='/*' to='/home'></Redirect>
             </Router>
+            
         )
     }
 }

@@ -7,7 +7,7 @@ export default class App extends Component {
     return (
       <div>
         <FirstRouter></FirstRouter>
-        <Tabbar></Tabbar>
+        {/* <Tabbar></Tabbar> */}
       </div>
     )
   }
