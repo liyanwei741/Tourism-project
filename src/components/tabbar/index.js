@@ -36,7 +36,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'blueTab',
                   });
-                  this.props.history.push("/home")
+                  this.props.history.push("/index/home")
                   
                 }}
                 // data-seed="logId"
@@ -55,7 +55,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'redTab',
                   });
-                  this.props.history.push("/discover")
+                  this.props.history.push("/index/discover")
                 }}
                 // data-seed="logId1"
               >
@@ -71,7 +71,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'blackTab',
                   });
-                  this.props.history.push("/issued")
+                  this.props.history.push("/index/issued")
                 }}
                 >
                   
@@ -89,7 +89,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'greenTab',
                   });
-                  this.props.history.push("/hotel")
+                  this.props.history.push("/index/hotel")
                 }}
               >
               </TabBar.Item>
@@ -103,7 +103,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'yellowTab',
                   });
-                  this.props.history.push("/profile")
+                  this.props.history.push("/index/profile")
 
                 }}
               >
