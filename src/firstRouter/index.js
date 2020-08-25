@@ -9,6 +9,7 @@ import Tabbar from '../components/tabbar'
 import Search from '../components/home/Search'
 import HotTopic from '../components/home/HotTopic'
 import Login from '../components/user/Login'
+import Details from '../components/hotel/Details'
 class indexRouter extends Component {
     render() {
         return (
@@ -19,6 +20,7 @@ class indexRouter extends Component {
                 <Route exact path="/index/discover" render={() => <Discover></Discover>} />
                 <Route exact path="/index/issued" render={() => <Issued></Issued>} />
                 <Route exact path="/index/hotel" render={() => <Hotel></Hotel>} />
+                <Route exact path="/index/hotel/details"render={() =><Details></Details>}/>
                 <Route exact path="/index/profile" render={() => <Profile></Profile>} />
                 <Route path="/index/home/search" component={Search} />
                 <Route path="/index/home/hottopic" component={HotTopic} />

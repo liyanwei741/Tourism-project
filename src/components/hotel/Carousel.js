@@ -1,7 +1,6 @@
 import { Carousel, WingBlank } from 'antd-mobile';
 import React, { Component } from 'react'
-
-class Carouselaotu extends React.Component {
+class Carouselaotu extends Component {
   state = {
     data: ['1', '2', '3'],
     imgHeight: 176,
@@ -10,16 +9,16 @@ class Carouselaotu extends React.Component {
     // simulate img loading
     
       this.setState({
-        data: ['http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/%E9%85%92%E5%BA%97/u2007.png?token=b417d7caefca492a83b40e75b6692621d18dd68fd9eba0ab87979371b8046587'
-        ,
-         'http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/%E9%85%92%E5%BA%97/u2008.png?token=ebed147a3d1c1345bed657be7a09cb619103835d4370f4a841f6033a57a35137'
-         , 'http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/%E9%85%92%E5%BA%97/u2010.png?token=5cc5c3172e4d591ff46223f0273f9b0bf519ed3abd36c1150194650f4135ea57'
-         ,'http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/%E9%85%92%E5%BA%97/u2011.png?token=f98c4873dee5b0d040285760e140dedda91c53d0653209222da93c8c4ab013f1'],
+        data: [
+          'https://s1.ax1x.com/2020/08/25/dcZc8I.png' ,
+         'https://s1.ax1x.com/2020/08/25/dcZdKK.png', 
+         'https://s1.ax1x.com/2020/08/25/dcZ6PA.png' ,
+         'https://s1.ax1x.com/2020/08/25/dcZs5d.png'],
       });
   }
   render() {
     return (
-      <WingBlank>
+ 
         <Carousel
           autoplay={true}
           infinite
@@ -29,7 +28,7 @@ class Carouselaotu extends React.Component {
           {this.state.data.map(val => (
             <a
               key={val}
-              href="http://www.alipay.com"
+              // href="http://www.alipay.com"
               style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
             >
               <img
@@ -45,7 +44,6 @@ class Carouselaotu extends React.Component {
             </a>
           ))}
         </Carousel>
-      </WingBlank>
     );
   }
 }
