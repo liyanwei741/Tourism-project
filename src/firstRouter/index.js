@@ -6,13 +6,13 @@ import Hotel from '../components/hotel'
 import Issued from '../components/issued'
 import Discover  from '../components/discover'
 import Tabbar from '../components/tabbar'
-
+import Details from '../components/hotel/Details'
 class indexRouter extends Component {
     render() {
         return (
             
             <Router >
-                
+
                     <Route exact path="/home" 
                     component={Home}></Route>
                     
@@ -29,6 +29,9 @@ class indexRouter extends Component {
                     <Route exact path="/profile" 
                     render={ () =><Profile></Profile>}></Route>
                     
+                    <Route exact path="/hotel/details"
+                    render={ () =><Details></Details>}></Route>
+
                     <Route path="/" component={Tabbar}>
                 </Route>
 
