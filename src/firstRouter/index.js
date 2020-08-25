@@ -9,6 +9,7 @@ import Tabbar from '../components/tabbar'
 import Search from '../components/home/Search'
 import HotTopic from '../components/home/HotTopic'
 import Login from '../components/user/Login'
+import Details from '../components/hotel/Details'
 class indexRouter extends Component {
     render() {
         return (
