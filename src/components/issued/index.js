@@ -7,7 +7,7 @@ class index extends Component {
         return (
             <div>
                 
-                <Users></Users>
+                
             </div>
         )
     }

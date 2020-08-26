@@ -1,0 +1,9 @@
+.bannerbord {
+  width: 375px;
+  height: 200px;
+  box-sizing: border-box;
+  .slider-slide {
+    overflow: hidden;
+    border-radius: 10px;
+  }
+}

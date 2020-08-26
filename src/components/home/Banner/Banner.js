@@ -1,29 +1,33 @@
+import React from 'react';
 import { Carousel, WingBlank } from 'antd-mobile';
-import React, { Component } from 'react'
-class Carouselaotu extends Component {
+import './banner.scss'
+import imgURL1 from '../../../assers/img/u337.png';
+import imgURL2 from '../../../assers/img/u338.png';
+import imgURL3 from '../../../assers/img/u340.png';
+import imgURL4 from '../../../assers/img/u341.png';
+
+class Banner extends React.Component {
   state = {
-    data: ['1', '2', '3'],
-    imgHeight: 176,
+    data: ['1', '2', '3' , '4'],
+    imgHeight: 170,
   }
   componentDidMount() {
-    // simulate img loading
-    
+    // 模拟img加载
+    setTimeout(() => {
       this.setState({
-        data: [
-          'https://s1.ax1x.com/2020/08/25/dcZc8I.png' ,
-         'https://s1.ax1x.com/2020/08/25/dcZdKK.png', 
-         'https://s1.ax1x.com/2020/08/25/dcZ6PA.png' ,
-         'https://s1.ax1x.com/2020/08/25/dcZs5d.png'],
+        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
       });
+    }, 300);
   }
   render() {
     return (
- 
+      <div className="bannerbord">
+      <WingBlank>
         <Carousel
           autoplay={true}
           infinite
-        //   beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-        //   afterChange={index => console.log('slide to', index)}
+          // beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
+          // afterChange={index => console.log('slide to', index)}
         >
           {this.state.data.map(val => (
             <a
@@ -32,7 +36,8 @@ class Carouselaotu extends Component {
               style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
             >
               <img
-                src={`${val}`}
+              // src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                src={imgURL2}
                 alt=""
                 style={{ width: '100%', verticalAlign: 'top' }}
                 onLoad={() => {
@@ -44,7 +49,9 @@ class Carouselaotu extends Component {
             </a>
           ))}
         </Carousel>
+      </WingBlank>
+      </div>
     );
   }
 }
-export default Carouselaotu
+export default Banner
