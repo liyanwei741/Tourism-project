@@ -1,9 +1,14 @@
 import React from 'react';
 import { Carousel, WingBlank } from 'antd-mobile';
 import './banner.scss'
+import imgURL1 from '../../../assers/img/u337.png';
+import imgURL2 from '../../../assers/img/u338.png';
+import imgURL3 from '../../../assers/img/u340.png';
+import imgURL4 from '../../../assers/img/u341.png';
+
 class Banner extends React.Component {
   state = {
-    data: ['1', '2', '3'],
+    data: ['1', '2', '3' , '4'],
     imgHeight: 170,
   }
   componentDidMount() {
@@ -31,7 +36,8 @@ class Banner extends React.Component {
               style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
             >
               <img
-                src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+              // src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                src={imgURL2}
                 alt=""
                 style={{ width: '100%', verticalAlign: 'top' }}
                 onLoad={() => {

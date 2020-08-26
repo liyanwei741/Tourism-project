@@ -1,5 +1,9 @@
-.am-wingblank{
-    border-radius: 10px;
+.bannerbord {
+  width: 375px;
+  height: 200px;
+  box-sizing: border-box;
+  .slider-slide {
     overflow: hidden;
-    margin-bottom: 10px;
+    border-radius: 10px;
+  }
 }
