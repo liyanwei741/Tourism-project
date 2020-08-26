@@ -20,7 +20,7 @@ class indexRouter extends Component {
                 <Route exact path="/index/discover" render={() => <Discover></Discover>} />
                 <Route exact path="/index/issued" render={() => <Issued></Issued>} />
                 <Route exact path="/index/hotel" render={() => <Hotel></Hotel>} />
-                <Route exact path="/index/hotel/details"render={() =><Details></Details>}/>
+                <Route exact path="/hotel/details"render={() =><Details></Details>}/>
                 <Route exact path="/index/profile" render={() => <Profile></Profile>} />
                 <Route path="/index/home/search" component={Search} />
                 <Route path="/index/home/hottopic" component={HotTopic} />

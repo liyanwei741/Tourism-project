@@ -1,13 +1,18 @@
 import React, { Component } from 'react'
 import './Details.css'
 import { List } from 'antd-mobile';
-
+import HotelCard2 from './card2'
 
  class details extends Component {
     Item = List.Item;
     Brief = this.Item.Brief;
     state = {
         disabled: false,
+        card:[{name:'豪华大床房',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.6',price:'308',src:'https://s1.ax1x.com/2020/08/26/dR0vVK.png'},
+        {name:'特价大床房(无窗)',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.9',price:'327',src:'https://s1.ax1x.com/2020/08/26/dR0Xb6.png'},
+        {name:'行政套房',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.9',price:'498',src:'https://s1.ax1x.com/2020/08/26/dR0ODx.png'},
+        
+    ]
       }
     render() {
         return (
@@ -30,13 +35,21 @@ import { List } from 'antd-mobile';
           platform="android">4.7 很棒 吃饭方便 交通便利</this.Item>
         <this.Item arrow="horizontal" multipleLine
           onClick={() => {}}
-          platform="android">1月18日 今天 一晚 1月18日 明天</this.Item>
+          platform="android">1月18日起 至 1月18日 共 1 天</this.Item>
           <this.Item arrow="horizontal" multipleLine
           onClick={() => {}}
-          platform="android">房间数 成人 儿童</this.Item>
+          platform="android">房间:1 成人:2人 儿童:0人</this.Item>
                     </div>
                 </div>
+
+                {this.state.card.map((item)=>{
+                    return<HotelCard2 key={item.name} item={item}>
+
+                    </HotelCard2>
+                  })}
             </div>
+
+          
         )
     }
 }
