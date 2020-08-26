@@ -16,7 +16,7 @@ class TabsView extends Component {
 
                     <div className="footer">
                         <div><p>入住</p>1月1日</div>
-                        <div><p>&nbsp;</p>1晚</div>
+                        <div><p>时长</p>1天</div>
                         <div><p>退房</p>1月2日</div>
                         <div><p>房间数</p>1间</div>
                         <div><p>每间</p>2成人</div>

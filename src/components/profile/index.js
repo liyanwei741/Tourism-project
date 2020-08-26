@@ -23,7 +23,7 @@ class index extends Component {
                 <div className="header">
                 <BellOutlined />
                     <div className="portrait">
-                        <img src="http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/我的/u3143.png?token=8ed8968dce5f2e3c326f9d9e1c9b09b56cfcfab5b51ec76f54e29f87bb8b6217"/>
+                        <img src="https://s1.ax1x.com/2020/08/26/d2hX80.png"/>
                     </div>
                     <div className="userName">
                         <span>小可</span>
@@ -41,7 +41,7 @@ class index extends Component {
                     {this.state.liArrt.map((item,index)=>{
                         return <div key={index}>
                             <span><Link to={item.link}>{item.name}</Link></span>
-                            <Link to={item.link}><img src="http://cloud.axureshop.com/gsc/WHP1Q6/32/0c/cc/320ccc836df64b6789a160c1b59f6a47/images/我的/u3154.png?token=95c729c80e762f13459ce7fede7ade3a4c721e658a90e6141dc9fd779315ac6b"/></Link>
+                            <Link to={item.link}><img src="https://s1.ax1x.com/2020/08/26/d2hj2V.png"/></Link>
                         </div>
                     })}
                 </div>
