@@ -38,12 +38,12 @@ class index extends Component {
                     <div className="hottitle">
                         <ul>
                             <li>
-                                <img src={imgURL} />
+                                <img src={imgURL} alt=""/>
                                 <span>超美的蓝色在约克半岛开启一场奇幻之旅</span>
                                 <p>讨论中 : 15W</p>
                             </li>
                             <li>
-                                <img src={imgURL2} />
+                                <img src={imgURL2} alt="" />
                                 <span>世界上最色的12座城，那一座让你心动？</span>
                                 <p>讨论中 : 15W</p>
                             </li>
@@ -58,10 +58,10 @@ class index extends Component {
                     
                         <div className="sharelist">
                              <div className="shareChil">
-                                <img src={imgURL3} />
+                                <img src={imgURL3} alt=""/>
                                 <span>好不容易离开了自己呆腻的地方，去了别人的地方</span>
                                 <div className="pelemt">
-                                    <img src={imgURL5}/>
+                                    <img src={imgURL5} alt=""/>
                                     <span>如初</span>
                                     <div className="pelemtchile">
                                         <HeartOutlined />
@@ -70,10 +70,10 @@ class index extends Component {
                                 </div>
                             </div>
                             <div className="shareChil">
-                                <img src={imgURL3} />
+                                <img src={imgURL3} alt=""/>
                                 <span>好不容易离开了自己呆腻的地方，去了别人的地方</span>
                                 <div className="pelemt">
-                                    <img src={imgURL5}/>
+                                    <img src={imgURL5} alt=""/>
                                     <span>如初</span>
                                     <div className="pelemtchile">
                                         <HeartOutlined />
@@ -82,10 +82,10 @@ class index extends Component {
                                 </div>
                             </div>
                             <div className="shareChil">
-                                <img src={imgURL3} />
+                                <img src={imgURL3} alt="" />
                                 <span>好不容易离开了自己呆腻的地方，去了别人的地方</span>
                                 <div className="pelemt">
-                                    <img src={imgURL5}/>
+                                    <img src={imgURL5} alt=""/>
                                     <span>如初</span>
                                     <div className="pelemtchile">
                                         <HeartOutlined />
@@ -94,10 +94,10 @@ class index extends Component {
                                 </div>
                             </div>
                             <div className="shareChil">
-                                <img src={imgURL3} />
+                                <img src={imgURL3} alt=""/>
                                 <span>好不容易离开了自己呆腻的地方，去了别人的地方</span>
                                 <div className="pelemt">
-                                    <img src={imgURL5}/>
+                                    <img src={imgURL5} alt=""/>
                                     <span>如初</span>
                                     <div className="pelemtchile">
                                         <HeartOutlined />
@@ -106,10 +106,10 @@ class index extends Component {
                                 </div>
                             </div>
                             <div className="shareChil">
-                                <img src={imgURL3} />
+                                <img src={imgURL3} alt=""/>
                                 <span>好不容易离开了自己呆腻的地方，去了别人的地方</span>
                                 <div className="pelemt">
-                                    <img src={imgURL5}/>
+                                    <img src={imgURL5} alt=""/>
                                     <span>如初</span>
                                     <div className="pelemtchile">
                                         <HeartOutlined />
