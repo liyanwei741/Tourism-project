@@ -6,6 +6,7 @@ import Hotel from '../components/hotel'
 import Issued from '../components/issued'
 import Discover  from '../components/discover'
 import Tabbar from '../components/tabbar'
+import User from '../components/discover/User'
 
 class indexRouter extends Component {
     render() {
@@ -13,8 +14,12 @@ class indexRouter extends Component {
             
             <Router >
                 
+                    <Route exact path="/user" 
+                    component={User}></Route>   
+
                     <Route exact path="/home" 
                     component={Home}></Route>
+
                     
                     <Route exact path="/discover" 
                     render={ () =><Discover></Discover>}></Route>
