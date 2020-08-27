@@ -3,7 +3,7 @@ import { withRouter } from 'react-router-dom'
 import Carouselaotu from './Carousel'
 import Tabs from './Tabs'
 import HotelCard from './card'
-import './index.css'
+import './index.scss'
 
 class index extends Component {
     contentStyle = {

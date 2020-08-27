@@ -38,7 +38,7 @@ import './index.css'
                   this.setState({
                     selectedTab: 'blueTab',
                   });
-                  this.props.history.push("/index/home")
+                  this.props.history.push("/index/home/:_id")
                   
                 }}
                 // data-seed="logId"
