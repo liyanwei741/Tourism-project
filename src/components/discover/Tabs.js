@@ -1,5 +1,5 @@
-import React, { Component } from 'react'
-import { Tabs, WhiteSpace, Badge } from 'antd-mobile';
+import React from 'react'
+import { Tabs, Badge } from 'antd-mobile';
 import First from './first/First';
 import Second from './second/second';
 import Third from './third/third';

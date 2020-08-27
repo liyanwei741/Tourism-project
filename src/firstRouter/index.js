@@ -17,9 +17,10 @@ class indexRouter extends Component {
         return (
 
             <Router >
+
+                <Route exact path="/index/home/:_id"component={Home} />
                     <Route exact path="/user" 
                     component={User}></Route>   
-                <Route exact path="/index/home"component={Home} />
                 <Route exact path="/index/discover" render={() => <Discover></Discover>} />
                 <Route exact path="/index/issued" render={() => <Issued></Issued>} />
                 <Route exact path="/index/hotel" render={() => <Hotel></Hotel>} />
@@ -29,7 +30,7 @@ class indexRouter extends Component {
                 <Route path="/index/home/hottopic" component={HotTopic} />
                 <Route path="/login" component={Login} />
                 <Route path="/index" component={Tabbar} />
-                <Redirect from='/*' to='/index/home'></Redirect>
+                <Redirect from='/*' to='/index/home/:_id'></Redirect>
             </Router>
 
         )

@@ -1,4 +1,4 @@
-import { Card, WhiteSpace } from 'antd-mobile';
+import { Card } from 'antd-mobile';
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 

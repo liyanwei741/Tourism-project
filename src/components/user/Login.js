@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 import { Button } from 'antd-mobile';
 import './login.scss'
 import $axios from 'axios'
-import { Link } from 'react-router-dom'
 export default class Login extends Component {
 
     constructor(props) {
@@ -77,7 +76,7 @@ export default class Login extends Component {
         let isPass = this.state.isPassShow
         let username = this.state.username
         let password = this.state.password
-        console.log(isShow);
+        // console.log(isShow);
         if (!password) {
             this.setState({
                 isPassShow: true
@@ -87,9 +86,9 @@ export default class Login extends Component {
                 isPassShow: false
             })
         }
-        console.log('isShow', isShow);
-        console.log('isHidd', isHidd);
-        console.log('isPass', isPass);
+        // console.log('isShow', isShow);
+        // console.log('isHidd', isHidd);
+        // console.log('isPass', isPass);
 
         if (isShow && !isHidd && !isPass) {
             $axios({
@@ -97,10 +96,15 @@ export default class Login extends Component {
                 url: '/api/login',
                 data: { username: username, password: password }
             }).then(res => {
-                console.log(res);
-                console.log(res.data.token);
+                // console.log(res.data.data._id);
+                // console.log(res.data.token);
+                // console.log(res.data.data.name);
                 if (res.data.err === 0) {
-                    this.props.history.push('./index/home')
+                    let _id = res.data.data._id
+                    let token =res.data;
+                    // 存储
+                    sessionStorage.setItem(_id,JSON.stringify(token));
+                    this.props.history.push({pathname:'./index/home/'+ _id })
                 } else {
                     alert("账号密码错误")
                 }
@@ -112,10 +116,6 @@ export default class Login extends Component {
         } else {
             alert('账号密码格式错误')
         }
-
-    }
-
-    componentDidMount() {
 
     }
 }
