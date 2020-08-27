@@ -91,7 +91,9 @@
         .shareChil {
           break-inside: avoid;
           height: 300px;
+          border-radius: 10px;
           margin-bottom: 20px;
+          overflow: hidden;
           img {
             width: 100%;
           }

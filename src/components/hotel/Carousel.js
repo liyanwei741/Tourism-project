@@ -1,4 +1,4 @@
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd-mobile';
 import React, { Component } from 'react'
 class Carouselaotu extends Component {
   state = {

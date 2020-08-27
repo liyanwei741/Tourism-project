@@ -1,5 +1,5 @@
 import React from 'react';
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd-mobile';
 import './banner.scss'
 import $axios from 'axios'
 class Banner extends React.Component {
@@ -14,8 +14,6 @@ class Banner extends React.Component {
 
   // 挂在完毕
   componentDidMount() {
-    let session =JSON.parse(sessionStorage.getItem(this.props.data))
-    // console.log(session.token);
     $axios({
       method:'get',
       url:'/api/home/banner',
