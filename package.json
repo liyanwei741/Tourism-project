@@ -39,11 +39,5 @@
       "last 1 safari version"
     ]
   },
-<<<<<<< HEAD
-=======
-  "devDependencies": {
-    "node-sass": "^4.14.1"
-  },
->>>>>>> b06f71111c02812b15cb610f91fbbf1ce29bebdd
   "proxy": "http://10.36.149.152:8000"
 }
