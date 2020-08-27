@@ -10,12 +10,15 @@ import Search from '../components/home/Search'
 import HotTopic from '../components/home/HotTopic'
 import Login from '../components/user/Login'
 import Details from '../components/hotel/Details'
+import User from '../components/discover/User'
+
 class indexRouter extends Component {
     render() {
         return (
 
             <Router >
-
+                    <Route exact path="/user" 
+                    component={User}></Route>   
                 <Route exact path="/index/home"component={Home} />
                 <Route exact path="/index/discover" render={() => <Discover></Discover>} />
                 <Route exact path="/index/issued" render={() => <Issued></Issued>} />
