@@ -10,6 +10,8 @@ import Search from '../components/home/Search'
 import HotTopic from '../components/home/HotTopic'
 import Login from '../components/user/Login'
 import Details from '../components/hotel/Details'
+import User from '../components/discover/User'
+
 class indexRouter extends Component {
     render() {
         return (
@@ -17,6 +19,8 @@ class indexRouter extends Component {
             <Router >
 
                 <Route exact path="/index/home/:_id"component={Home} />
+                    <Route exact path="/user" 
+                    component={User}></Route>   
                 <Route exact path="/index/discover" render={() => <Discover></Discover>} />
                 <Route exact path="/index/issued" render={() => <Issued></Issued>} />
                 <Route exact path="/index/hotel" render={() => <Hotel></Hotel>} />

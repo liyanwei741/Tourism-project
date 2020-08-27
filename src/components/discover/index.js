@@ -1,14 +1,15 @@
 import React, { Component } from 'react'
 import { withRouter } from 'react-router-dom'
+import TabExample from './Tabs'
 
 class index extends Component {
     render() {
         return (
             <div>
-                
-                <h1>发现</h1>
+                <TabExample />
             </div>
         )
     }
 }
 export default withRouter(index)
+
