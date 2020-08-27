@@ -27,7 +27,7 @@ class index extends Component {
     
     render() {
         return (
-            <div>
+            <div className='hotel'>
                <Carouselaotu></Carouselaotu>
                <Tabs></Tabs>
                <div>

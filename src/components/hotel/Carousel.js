@@ -10,7 +10,7 @@ class Carouselaotu extends Component {
     
       this.setState({
         data: [
-          'https://s1.ax1x.com/2020/08/25/dcZc8I.png' ,
+         'https://s1.ax1x.com/2020/08/25/dcZc8I.png' ,
          'https://s1.ax1x.com/2020/08/25/dcZdKK.png', 
          'https://s1.ax1x.com/2020/08/25/dcZ6PA.png' ,
          'https://s1.ax1x.com/2020/08/25/dcZs5d.png'],
