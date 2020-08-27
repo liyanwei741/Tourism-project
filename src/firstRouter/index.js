@@ -11,7 +11,7 @@ import HotTopic from '../components/home/HotTopic'
 import Login from '../components/user/Login'
 import Details from '../components/hotel/Details'
 import User from '../components/discover/User'
-
+import DetailPages from '../components/hotel/DetailPages'
 class indexRouter extends Component {
     render() {
         return (
@@ -29,6 +29,7 @@ class indexRouter extends Component {
                 <Route path="/index/home/hottopic" component={HotTopic} />
                 <Route path="/login" component={Login} />
                 <Route path="/index" component={Tabbar} />
+                <Route path="/detailpages" component={DetailPages}/>
                 <Redirect from='/*' to='/index/home'></Redirect>
             </Router>
 

@@ -2,20 +2,20 @@
   padding-bottom: 50px;
 }
 
-.hotel .TabsView {
+.TabsView {
   width: 100vh;
   padding-left: 30px;
   padding-right: 30px;
   margin-top: 20px;
 }
 
-.hotel .TabsView .header {
+.TabsView .header {
   display: flex;
   border-bottom: 1px solid #ccc;
   padding-bottom: 10px;
 }
 
-.hotel .TabsView .header .place {
+.TabsView .header .place {
   flex: 1;
   font-weight: 500;
   font-style: normal;
@@ -23,28 +23,28 @@
   padding-left: 10px;
 }
 
-.hotel .TabsView .header .headerRight {
+.TabsView .header .headerRight {
   float: right;
   text-align: center;
   padding-right: 10px;
 }
 
-.hotel .TabsView .header .headerRight > p {
+.TabsView .header .headerRight > p {
   margin: 0;
   font-size: 10px;
 }
 
-.hotel .TabsView .footer {
+.TabsView .footer {
   display: flex;
   text-align: center;
 }
 
-.hotel .TabsView .footer > div {
+.TabsView .footer > div {
   flex: 1;
   margin-top: 10px;
 }
 
-.hotel .TabsView .footer > div > p {
+.TabsView .footer > div > p {
   margin-bottom: 10px;
   font-family: 'PingFangSC-Regular', 'PingFang SC';
   font-weight: 400;
@@ -53,21 +53,21 @@
   color: #999999;
 }
 
-.hotel .hotelCard .cardName {
+.hotelCard .cardName {
   margin: 10px 0;
 }
 
-.hotel .hotelCard .cardContent {
+.hotelCard .cardContent {
   margin-left: 10px;
   width: 100%;
 }
 
-.hotel .hotelCard .cardTag {
+.hotelCard .cardTag {
   font-size: 10px;
   margin-top: 15px;
 }
 
-.hotel .hotelCard .cardTag > span {
+.hotelCard .cardTag > span {
   display: inline-block;
   border: 1px solid;
   width: 55px;
@@ -78,32 +78,32 @@
   border-radius: 10px;
 }
 
-.hotel .hotelCard .cardTag .cardTag1 {
+.hotelCard .cardTag .cardTag1 {
   color: #28D094;
   border-color: #28D094;
 }
 
-.hotel .hotelCard .cardTag .cardTag2 {
+.hotelCard .cardTag .cardTag2 {
   color: rgba(102, 0, 255, 0.678431);
   border-color: rgba(102, 0, 255, 0.678431);
 }
 
-.hotel .hotelCard .cardTag3 {
+.hotelCard .cardTag3 {
   margin-top: 15px;
   font-size: 14px;
   color: #333333;
 }
 
-.hotel .hotelCard .cardSP {
+.hotelCard .cardSP {
   margin-top: 15px;
   justify-content: center;
 }
 
-.hotel .hotelCard .cardSP > :last-child {
+.hotelCard .cardSP > :last-child {
   float: right;
 }
 
-.hotel .hotelCard .cardSP > span {
+.hotelCard .cardSP > span {
   display: inline-block;
   width: 55px;
   text-align: center;
@@ -113,14 +113,14 @@
   border-radius: 10px;
 }
 
-.hotel .hotelCard .cardSP .cardScore {
+.hotelCard .cardSP .cardScore {
   background-color: #ff6600;
   color: #fff;
   position: relative;
   top: -2px;
 }
 
-.hotel .hotelCard .cardSP .cardPrice {
+.hotelCard .cardSP .cardPrice {
   font-size: 20px;
   color: #FF6600;
   font-weight: 700;
