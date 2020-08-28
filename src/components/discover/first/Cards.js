@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 //import { Card, WhiteSpace } from 'antd-mobile';
 import CardCSS from './Cards.module.scss'
 import {Link} from 'react-router-dom'

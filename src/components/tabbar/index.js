@@ -2,6 +2,7 @@ import React, { Component } from 'react'
 import { TabBar } from 'antd-mobile';
 import {HomeOutlined,CompassOutlined,ShopOutlined,UserOutlined,PlusCircleOutlined} from '@ant-design/icons'
 import { withRouter } from 'react-router-dom'
+import './index.css'
 
  class index extends Component {
     constructor(props) {
@@ -15,8 +16,9 @@ import { withRouter } from 'react-router-dom'
       }
     render() {
         return(
-            <div style={this.state.fullScreen ? { position: 'fixed', width: '100%',bottom:0 } : { height: 400 }}>
+            <div className="tarbar" style={this.state.fullScreen ? { position: 'fixed', width: '100%',bottom:0 } : { height: 400 }}>
             <TabBar
+
               unselectedTintColor="#333333"
               tintColor="#28D094"
               barTintColor="white"
@@ -36,7 +38,7 @@ import { withRouter } from 'react-router-dom'
                   this.setState({
                     selectedTab: 'blueTab',
                   });
-                  this.props.history.push("/index/home")
+                  this.props.history.push("/index/home/:_id")
                   
                 }}
                 // data-seed="logId"

@@ -1,55 +1,56 @@
 import React from 'react';
-import { Carousel, WingBlank } from 'antd-mobile';
+import { Carousel } from 'antd-mobile';
 import './banner.scss'
-import imgURL1 from '../../../assers/img/u337.png';
-import imgURL2 from '../../../assers/img/u338.png';
-import imgURL3 from '../../../assers/img/u340.png';
-import imgURL4 from '../../../assers/img/u341.png';
-
+import $axios from 'axios'
 class Banner extends React.Component {
-  state = {
-    data: ['1', '2', '3' , '4'],
-    imgHeight: 170,
+
+  constructor(props) {
+    super(props)
+    this.state = {
+      img:[1,2,3,4],
+    }
+    
   }
+
+  // 挂在完毕
   componentDidMount() {
-    // 模拟img加载
-    setTimeout(() => {
+    $axios({
+      method:'get',
+      url:'/api/home/banner',
+    }).then(res => {
+
       this.setState({
-        data: ['AiyWuByWklrrUDlFignR', 'TekJlZRVCjLFexlOCuWn', 'IJOtIlfsYdTyaDTRVrLI'],
-      });
-    }, 300);
+        img:res.data.data
+      })
+    })
   }
   render() {
     return (
       <div className="bannerbord">
-      <WingBlank>
-        <Carousel
-          autoplay={true}
-          infinite
-          // beforeChange={(from, to) => console.log(`slide from ${from} to ${to}`)}
-          // afterChange={index => console.log('slide to', index)}
-        >
-          {this.state.data.map(val => (
-            <a
-              key={val}
-              // href="http://www.alipay.com"
-              style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
-            >
-              <img
-              // src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
-                src={imgURL2}
-                alt=""
-                style={{ width: '100%', verticalAlign: 'top' }}
-                onLoad={() => {
-                  // fire window resize event to change height
-                  window.dispatchEvent(new Event('resize'));
-                  this.setState({ imgHeight: 'auto' });
-                }}
-              />
-            </a>
-          ))}
-        </Carousel>
-      </WingBlank>
+          <Carousel
+            autoplay={true}
+            infinite
+          >
+            {this.state.img.map(val => (
+              <a
+                key={val}
+                // href="http://www.alipay.com"
+                style={{ display: 'inline-block', width: '100%', height: this.state.imgHeight }}
+              >
+                <img
+                  // src={`https://zos.alipayobjects.com/rmsportal/${val}.png`}
+                  src={val.imageURL}
+                  alt={val.title}
+                  style={{ width: '100%', height:"180px" , verticalAlign: 'top' }}
+                  onLoad={() => {
+                    // fire window resize event to change height
+                    window.dispatchEvent(new Event('resize'));
+                    this.setState({ imgHeight: 'auto' });
+                  }}
+                />
+              </a>
+            ))}
+          </Carousel>
       </div>
     );
   }

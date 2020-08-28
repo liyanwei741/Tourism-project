@@ -2,8 +2,12 @@ import React, { Component } from 'react'
 import './Details.css'
 import { List } from 'antd-mobile';
 import HotelCard2 from './card2'
+import {withRouter} from 'react-router-dom'
 
  class details extends Component {
+    constructor(props){
+      super(props)
+    }
     Item = List.Item;
     Brief = this.Item.Brief;
     state = {
@@ -11,7 +15,6 @@ import HotelCard2 from './card2'
         card:[{name:'豪华大床房',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.6',price:'308',src:'https://s1.ax1x.com/2020/08/26/dR0vVK.png'},
         {name:'特价大床房(无窗)',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.9',price:'327',src:'https://s1.ax1x.com/2020/08/26/dR0Xb6.png'},
         {name:'行政套房',tag:['闪住','预约发票','25平方米 2-6层 有窗 城景'],score:'4.9',price:'498',src:'https://s1.ax1x.com/2020/08/26/dR0ODx.png'},
-        
     ]
       }
     render() {
@@ -24,7 +27,7 @@ import HotelCard2 from './card2'
           extra={'详情'}
           arrow="horizontal"
           multipleLine
-          onClick={() => {}}
+          onClick={() => {this.props.history.push('/detailpages')}}
           platform="android"
         >
           维也纳酒店(上海浦东机场店)
@@ -54,4 +57,4 @@ import HotelCard2 from './card2'
     }
 }
 
-export default details
+export default withRouter(details)
