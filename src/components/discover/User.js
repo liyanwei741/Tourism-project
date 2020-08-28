@@ -1,4 +1,4 @@
-import React, { Component } from 'react'
+import React from 'react'
 import UserCss from './User.module.scss'
 import Tabtab from './Tabtab'
 import { withRouter } from 'react-router-dom'

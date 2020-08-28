@@ -1,6 +1,5 @@
-import React, { Component } from 'react'
-import { Tabs, WhiteSpace, Badge } from 'antd-mobile';
-import TabtabCSS from './Tabtab.module.scss'
+import React from 'react'
+import { Tabs, Badge } from 'antd-mobile';
 
 const tabs = [
   { title: <Badge text={'3'}>First Tab</Badge> },

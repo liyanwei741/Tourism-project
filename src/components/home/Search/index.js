@@ -7,11 +7,15 @@ class index extends Component {
     render(){
         return (
             <div className="page subpage" id="search">
-                <h1>搜索组件</h1>
-                <button>回去</button>
+                <div>发布</div>
+                <div>标题输入框</div>
+                <div>正文输入框</div>
+                <div>添加地址</div>
+                <div>图片上传</div>
+
             </div>
         )
-    }
+    }xw
 
 }
 
