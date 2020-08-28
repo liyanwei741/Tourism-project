@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import { Tabs, WhiteSpace, Badge } from 'antd-mobile';
 import TabtabCSS from './Tabtab.module.scss'
+import Q1 from './Q1'
+import Q2 from './Q2'
 
 const tabs = [
-  { title: <Badge text={'3'}>First Tab</Badge> },
-  { title: <Badge text={'今日(20)'}>Second Tab</Badge> },
+  { title: <Badge text={'（3）'}>今日更新</Badge> },
+  { title: <Badge text={'(9)'}>所有照片</Badge> },
   
 ];
 const Tabtab = () =>(
@@ -14,11 +16,11 @@ const Tabtab = () =>(
       onTabClick={(tab, index) => { console.log('onTabClick', index, tab); }}
       
     >
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-        Content of first tab
+      <div style={{ display: 'flex', backgroundColor: '#fff' }}>
+        <Q1></Q1>
       </div>
-      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', height: '150px', backgroundColor: '#fff' }}>
-        Content of second tab
+      <div style={{ display: 'flex',  backgroundColor: '#fff' }}>
+        <Q2/>
       </div>
     </Tabs> 
 )

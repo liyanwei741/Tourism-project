@@ -5,9 +5,9 @@ import Second from './second/second';
 import Third from './third/third';
 
 const tabs = [
-  { title: <Badge>First Tab</Badge> },
-  { title: <Badge>Second Tab</Badge> },
-  { title: <Badge>Third Tab</Badge> },
+  { title: <Badge>遇见驴友</Badge> },
+  { title: <Badge>每日优选</Badge> },
+  { title: <Badge>精品</Badge> },
 ];
 
 const TabExample = () => (

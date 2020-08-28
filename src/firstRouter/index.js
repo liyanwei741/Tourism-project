@@ -29,7 +29,7 @@ class indexRouter extends Component {
                 <Route path="/index/home/hottopic" component={HotTopic} />
                 <Route path="/login" component={Login} />
                 <Route path="/index" component={Tabbar} />
-                <Redirect from='/*' to='/login'></Redirect>
+                <Redirect from='/*' to='/index/home'></Redirect>
             </Router>
 
         )
