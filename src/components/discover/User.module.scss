@@ -1,5 +1,10 @@
 .d{position: relative;
 
+.Img{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
 .touxiang{
     height: 80px;
     width: 80px;
@@ -7,7 +12,14 @@
     position: absolute;
     left: 20px;
     top: 160px;
-    background-color: aqua;
+    >img{
+        position: absolute;
+    left: -10px;
+    top: -8px;
+    width: 96px;
+    height: 96px;
+    border-width: 0px;
+    }
 
 }
 .red{
